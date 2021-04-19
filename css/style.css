@@ -185,10 +185,24 @@ header .login-btn:hover {
   height: 100%;
   z-index: -1;
 }
-.whats-on .flower {
+
+.bg-images {
+  position: relative;
+}
+.bg-images .flower {
   position: absolute;
-  left: -180px;
-  top: 180px;
+  left: 0;
+  top: 530px;
+}
+.bg-images .bubble {
+  position: absolute;
+  left: 0;
+  top: 1450px;
+}
+.bg-images .three {
+  position: absolute;
+  right: 0;
+  top: 1750px;
 }
 
 .healing-power {
@@ -196,6 +210,7 @@ header .login-btn:hover {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
+  position: relative;
 }
 .healing-power div h3 {
   font-size: 50px;
@@ -221,4 +236,113 @@ header .login-btn:hover {
 }
 .healing-power img {
   display: block;
+}
+
+.five-ways {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+.five-ways h2 {
+  font-size: 50px;
+  color: #3b3838;
+  margin-left: 5%;
+  margin-top: -50px;
+  margin-bottom: 0;
+}
+.five-ways p {
+  opacity: 0.65;
+  font-size: 18px;
+  margin-left: 20%;
+  line-height: 30px;
+  margin-top: 106px;
+  margin-bottom: 0;
+}
+.five-ways img {
+  display: block;
+  height: 629px;
+  width: 735px;
+}
+.five-ways a {
+  text-decoration: none;
+  color: #3CBEF1;
+  font-size: 18px;
+  margin-left: 20%;
+  display: block;
+  margin-top: 90px;
+  font-style: italic;
+}
+
+.best-seller {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.best-seller .card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 33%;
+  border-radius: 20px;
+}
+.best-seller .card h5 {
+  font-size: 25px;
+  color: #3B3838;
+  position: relative;
+  font-weight: 400;
+  margin-left: 15%;
+  margin-right: 15%;
+  left: 20px;
+}
+.best-seller .card h5:before {
+  content: "";
+  background-image: url("../img/vector_smart_object8_3968.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: -60px;
+  top: -8px;
+}
+.best-seller .card h4 {
+  font-size: 206px;
+  color: #3B3838;
+  position: relative;
+  font-weight: 400;
+  margin-top: 100px;
+  margin-bottom: 44px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.best-seller .card h4:before {
+  content: "$";
+  position: absolute;
+  font-size: 66px;
+  left: -10px;
+}
+.best-seller .card h4:after {
+  content: "/Mo";
+  position: absolute;
+  font-size: 41px;
+  bottom: 45px;
+}
+.best-seller .card h6 {
+  font-size: 25px;
+  color: #3B3838;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+}
+.best-seller .card button {
+  display: block;
+  margin: 0 auto;
+  background-color: #8EC7FB;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  padding: 34px;
+  border-radius: 50px;
+  margin-bottom: 55px;
 }

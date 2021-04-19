@@ -196,10 +196,24 @@ header {
         height: 100%;
         z-index: -1;
     }
+}
+
+.bg-images {
+    position: relative;
     .flower {
         position: absolute;
-        left: -180px;
-        top: 180px;
+        left: 0;
+        top: 530px;
+    }
+    .bubble {
+        position: absolute;
+        left: 0;
+        top: 1450px;
+    }
+    .three {
+        position: absolute;
+        right: 0;
+        top: 1750px;
     }
 }
 
@@ -208,6 +222,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
+    position: relative;
     div {
         h3 {
             font-size: 50px;
@@ -237,20 +252,111 @@ header {
     }
 }
 
-// @keyframes tremor {
-//     0% {
-//         transform: scale(1);
-//     }
-//     20% {
-//         transform: scaleX(1.1);
-//     }
-//     51% {
-//         transform: scaleY(1.2);
-//     }
-//     70% {
-//         transform: scalex(1.1);
-//     }
-//     100% {
-//         transform: scale(1);
-//     }
-// }
+.five-ways {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 300px;
+    h2 {
+        font-size: 50px;
+        color: #3b3838;
+        margin-left: 5%;
+        margin-top: -50px;
+        margin-bottom: 0;
+    }
+    p {
+        opacity: 0.65;
+        font-size: 18px;
+        margin-left: 20%;
+        line-height: 30px;
+        margin-top: 106px;
+        margin-bottom: 0;
+    }
+    img {
+        display: block;
+        height: 629px;
+        width: 735px;
+    }
+    a {
+        text-decoration: none;
+        color: #3CBEF1;
+        font-size: 18px;
+        margin-left: 20%;
+        display: block;
+        margin-top: 90px;
+        font-style: italic;
+    }
+}
+
+.best-seller {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    .card {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        width: 33%;
+        border-radius: 20px;
+        h5 {
+            font-size: 25px;
+            color: #3B3838;
+            position: relative;
+            font-weight: 400;
+            margin-left: 15%;
+            margin-right: 15%;
+            left: 20px;
+            &:before {
+                content: '';
+                background-image: url("../img/vector_smart_object8_3968.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 38px;
+                height: 38px;
+                position: absolute;
+                left: -60px;
+                top: -8px;
+            }
+        }
+        h4 {
+            font-size: 206px;
+            color: #3B3838;
+            position: relative;
+            font-weight: 400;
+            margin-top: 100px;
+            margin-bottom: 44px;
+            margin-left: 15%;
+            margin-right: 15%;
+            text-align: center;
+            &:before {
+                content: '$';
+                position: absolute;
+                font-size: 66px;
+                left: -10px;
+            }
+            &:after {
+                content: '/Mo';
+                position: absolute;
+                font-size: 41px;
+                bottom: 45px;
+            }
+        }
+        h6 {
+            font-size: 25px;
+            color: #3B3838;
+            font-weight: 400;
+            text-align: center;
+            font-style: italic;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: #8EC7FB;
+            outline: none;
+            border: none;
+            color: white;
+            font-size: 25px;
+            padding: 34px;
+            border-radius: 50px;
+            margin-bottom: 55px;
+        }
+    }
+}
