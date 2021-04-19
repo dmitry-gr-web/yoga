@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FivoSans";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FivoSans"), url("../fonts/Fivosansregular.woff2") format("woff2"), url("../fonts/Fivosansregular.woff") format("woff");
+}
+@font-face {
+  font-family: "FivoSans";
+  font-style: normal;
+  font-weight: 700;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FivoSans"), url("../fonts/Fivosansbold.woff2") format("woff2"), url("../fonts/Fivosansbold.woff") format("woff");
+}
+@font-face {
+  font-family: "FivoSans";
+  font-style: normal;
+  font-weight: 300;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("FivoSans"), url("../fonts/Fivosanslight.woff2") format("woff2"), url("../fonts/Fivosanslight.woff") format("woff");
+}
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "FivoSans", sans-serif;
+}
+
+.background {
+  background-image: url("../img/vector_smart_object_3694.png");
+  max-width: 1920px;
+  height: 1334px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+header .logo {
+  font-size: 32px;
+  color: #ff6c6e;
+  font-weight: 700;
+  margin-left: 10%;
+}
+header .nav {
+  display: flex;
+}
+header .nav-list {
+  list-style-type: none;
+  padding-right: 67px;
+}
+header .nav-list:first-child {
+  margin-left: 250px;
+}
+header .nav-list .nav-link {
+  text-decoration: none;
+  color: #1c2056;
+  opacity: 0.5;
+  font-size: 18px;
+  transition: 0.3s;
+}
+header .nav-list .nav-link:hover {
+  color: #ff6c6e;
+  opacity: 1;
+}
+header .login-btn {
+  font-size: 18px;
+  width: 140px;
+  height: 42px;
+  background-color: #ff6c6e;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  outline: none;
+  margin-right: 10%;
+  transition: 0.3s;
+}
+header .login-btn:hover {
+  box-shadow: -5px 6px 49px 5px rgba(255, 0, 5, 0.18);
+}
+
+.beautiful-videos {
+  margin-left: 17%;
+  margin-top: 150px;
+}
+.beautiful-videos h1 {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #3b3838;
+}
+.beautiful-videos p {
+  opacity: 0.65;
+  font-family: FivoSans;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 70px;
+}
+.beautiful-videos a {
+  text-decoration: none;
+  padding: 34px 87px;
+  font-size: 20px;
+  border: 2px solid #ff6a6d;
+  border-radius: 60px;
+  margin-right: 34px;
+  color: #ff6c6e;
+  transition: 0.3s;
+}
+.beautiful-videos a:hover {
+  background-color: #ff6c6e;
+  color: white;
+  box-shadow: -14px 17px 24px 0px rgba(226, 88, 91, 0.44);
+}
+
+.option {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.option div {
+  width: 25%;
+  text-align: center;
+}
+.option div h3 {
+  margin-top: 92px;
+  margin-bottom: 32px;
+  font-size: 24px;
+  color: #3B3838;
+}
+.option div p {
+  opacity: 0.65;
+}
+
+.why-chose {
+  text-align: center;
+}
+.why-chose h1 {
+  color: #3B3838;
+}
+.why-chose h4 {
+  color: #3B3838;
+}
+
+.whats-on {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 300px;
+  z-index: 1;
+}
+.whats-on h3 {
+  color: #3B3838;
+  font-size: 50px;
+}
+.whats-on h5 {
+  color: #3B3838;
+  position: relative;
+  font-size: 24px;
+}
+.whats-on h5 span {
+  background-image: url("../img/ceklist_3864.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 31px;
+  height: 24px;
+  position: absolute;
+  left: -50px;
+  top: -2px;
+}
+.whats-on p {
+  opacity: 0.65;
+  font-size: 18px;
+}
+.whats-on img {
+  animation: 10s tremor ease-out infinite;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+@keyframes tremor {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scaleX(1.1);
+  }
+  51% {
+    transform: scaleY(1.2);
+  }
+  70% {
+    transform: scalex(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
